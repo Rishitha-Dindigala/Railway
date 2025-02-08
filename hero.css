@@ -1,0 +1,66 @@
+.hero {
+  background-image: url("../../../../src/components/images/6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container {
+  text-align: center; /* This centers the text inside the container */
+  padding-top: 0; /* Removed the padding-top */
+}
+
+.hero h1 {
+  color: #110101;
+  font-size: 60px;
+  margin-top: -300px; /* Adjust this value to move the heading upwards */
+}
+
+
+.hero p {
+  color: #110101;
+  opacity: 0.8;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Align children (button) in the center */
+}
+
+.btn-book {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-book:hover {
+  background-color: #e64a19;
+}
+
+@media screen and (max-width: 800px) {
+  .hero .container {
+    padding-top: 30%;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form .box {
+    border-left: none;
+  }
+  form input {
+    width: 100%;
+  }
+}
